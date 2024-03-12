@@ -1,0 +1,554 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  background-color: #000;
+  height: 100vh;
+}
+header {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-controller {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding: 25px;
+}
+.header-controller button {
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  align-items: center;
+  cursor: pointer;
+}
+.conclude {
+  width: 200px;
+  background-color: darkgoldenrod;
+  text-wrap: nowrap;
+  padding: 10px;
+  border: 0;
+  text-align: center;
+  margin: 10px auto;
+  cursor: pointer;
+  color: black;
+  font-weight: 800;
+  box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.8);
+}
+
+.myParty {
+  color: white;
+  margin: 0 auto;
+}
+.cadastreParty {
+  display: flex;
+  background: linear-gradient(90deg, #111 0%, #ffff 100%);
+  flex-direction: column;
+}
+
+.cadastrePartyh1 {
+  color: white;
+  margin: 10px auto;
+  text-align: center;
+  padding: 10px;
+  width: 500px;
+}
+.cadastreParty input {
+  box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.8);
+}
+
+.servicesdown {
+  background-color: darkgoldenrod;
+  padding: 5px;
+  height: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pariesdown {
+  background-color: darkgoldenrod;
+  padding: 5px;
+  height: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.conteude img {
+  height: 200px;
+  margin-left: -30px;
+}
+.conteudeserviceonparty p {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+}
+.conteudeserviceonparty {
+  border: 2px solid red;
+  height: 350px;
+  padding-bottom: 100px;
+}
+.conteudeserviceonparty img {
+  height: 130px;
+  margin-left: 10px;
+}
+.deleteService {
+  background-color: red;
+  border: 0;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 5px 15px;
+  color: white;
+  cursor: pointer;
+  width: 190px;
+}
+
+.prev {
+  position: absolute;
+  left: 15px;
+  padding: 5px;
+  border-radius: 5px;
+  top: 20px;
+  @media (max-width: 536px) {
+    top: 10px;
+  }
+}
+
+.serviceonp {
+  border: 2px solid red;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+}
+.serviceonp p {
+  max-width: 250px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  padding: 30px;
+  gap: 1rem;
+  margin: 10px auto;
+}
+.form input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 0;
+}
+.formParty input {
+  padding: 10px 10px;
+  border-radius: 5px;
+  border: 0;
+  font-size: 15px;
+  @media (max-width: 488px) {
+    width: 350px;
+  }
+}
+input {
+  font-weight: 400;
+}
+
+.createServicepag {
+  background-color: #111;
+  @media (max-width: 748px) {
+    width: 350px;
+  }
+  @media (max-width: 530px) {
+    width: 300px;
+  }
+
+  @media (max-width: 453px) {
+    width: 300px;
+  }
+}
+.createServicepag input {
+  font-size: 16px;
+  @media (max-width: 1063px) {
+    font-size: 15px;
+  }
+}
+.createServiceA {
+  background-color: #000;
+}
+
+.servicepageP {
+  background-color: red;
+  padding: 5px;
+  right: 30px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 25px;
+  @media (max-width: 528px) {
+    font-size: 10px;
+    width: 80px;
+  }
+
+  @media (max-width: 479px) {
+    font-size: 10px;
+    width: 80px;
+  }
+
+  @media (max-width: 456px) {
+    font-size: 8px;
+    width: 70px;
+  }
+}
+.ctx {
+  @media (max-width: 599px) {
+    margin-left: -100px;
+  }
+  @media (max-width: 480px) {
+    margin-left: -150px;
+    font-size: 25px;
+  }
+}
+.form button {
+  margin-bottom: 50px;
+}
+
+a {
+  color: red;
+  background-color: #333;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 700;
+}
+.btn {
+  height: 30px;
+  background-color: red;
+  color: white;
+  padding: 5px 5px;
+  width: 200px;
+  margin-top: 10px;
+}
+
+.wall {
+  color: white;
+  font-weight: 600;
+  padding-bottom: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.maxwall h1 {
+  margin-top: 20px;
+  padding: 20px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  gap: 5rem;
+  margin: 20px auto;
+  @media (max-width: 1079px) {
+    grid-template-columns: repeat(2, 300px);
+  }
+  @media (max-width: 697px) {
+    grid-template-columns: repeat(1, 300px);
+  }
+}
+.addService {
+  width: 190px;
+  margin-top: 5px;
+  border: 0;
+  background-color: blue;
+  padding: 10px 15px;
+  color: white;
+  cursor: pointer;
+  text-wrap: nowrap;
+}
+
+.conteude {
+  background-color: white;
+  color: #111;
+  box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.8);
+  background-color: #000;
+  opacity: 0.9;
+  color: white;
+  padding-bottom: 100px;
+  display: grid;
+  position: relative;
+}
+.conteude p {
+  margin-top: 10px;
+  color: white;
+  margin-left: 10px;
+  display: flex;
+  gap: 2rem;
+}
+.conteude span {
+  width: 5rem;
+}
+.conteude img {
+  width: 180px;
+  display: flex;
+}
+.btndelete {
+  width: 100px;
+  margin-top: 10px;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  border: 0;
+  cursor: pointer;
+  margin-bottom: -10px;
+}
+
+.editParty {
+  width: 100px;
+  margin-top: 10px;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  border: 0;
+  cursor: pointer;
+}
+.formEdit {
+  display: flex;
+  flex-direction: column;
+}
+
+.maxwall {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(90deg, #00bfff 0%, #e6e6fa 100%);
+  min-height: 100vh;
+  width: 100vw;
+  background-position: center;
+  background-size: cover;
+}
+.maxService {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 100px;
+  background: linear-gradient(90deg, #111 0%, #ffff 100%);
+  min-height: 100vh;
+}
+.max-conteudeService {
+  margin-top: 50px;
+  color: white;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, 360px);
+  @media (max-width: 1136px) {
+    grid-template-columns: repeat(2, 360px);
+    @media (max-width: 779px) {
+      grid-template-columns: repeat(1, 360px);
+    }
+  }
+}
+.headerService {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: -160px;
+  font-size: 20px;
+  margin-bottom: -35px;
+  color: white;
+  background-color: black;
+  padding: 15px 50px;
+  width: 100vw;
+  @media (max-width: 700px) {
+    font-size: 15px;
+  }
+}
+.headerService p {
+  display: flex;
+  align-items: center;
+  @media (max-width: 478px) {
+    margin-left: -5px;
+  }
+}
+.conteudeService {
+  background-color: #111;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 10px;
+  width: 350px;
+  height: 530px;
+  position: relative;
+  margin-left: 35px;
+  margin-top: 100px;
+  @media (max-width: 442px) {
+    width: 320px;
+  }
+}
+.descriptionspan {
+  display: flex;
+  font-size: 15px;
+  margin-top: 30px;
+  position: absolute;
+}
+
+.conteudoService-mine {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.conteudeService p {
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.imgService {
+  width: 200px;
+  display: flex;
+  height: 200px;
+}
+.conteudeService span {
+  color: yellow;
+  height: 0px;
+  width: 0px;
+  @media (max-width: 448px) {
+    font-size: 20px;
+  }
+}
+.imageService {
+  width: 200px;
+  height: 50px;
+}
+.addParty {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  cursor: pointer;
+  background-color: red;
+  color: white;
+  padding: 10px;
+}
+.Servicebtn {
+  margin-top: -5px;
+}
+.delbtnService {
+  position: absolute;
+  bottom: 5px;
+  background: 0;
+  border: 0;
+  font-size: 25px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+.addCash {
+  display: flex;
+  gap: 1rem;
+}
+.addCash button {
+  cursor: pointer;
+}
+
+.details {
+  background: linear-gradient(146deg, #000 0%, #8b008b 100%);
+  width: 100vw;
+  color: white;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding-bottom: 200px;
+}
+.details-conteude {
+  background-color: white;
+  background-color: #000;
+  padding: 10px 15px;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.btnDetails {
+  padding: 10px 15px;
+  margin-top: 15px;
+  cursor: pointer;
+  background-color: darkgoldenrod;
+  font-weight: 800;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.details-conteude h1 {
+  text-align: center;
+  background-color: red;
+}
+.details-conteude p {
+  display: flex;
+  justify-content: space-between;
+  width: 320px;
+}
+.btn-details {
+  position: absolute;
+  background-color: darkgoldenrod;
+  padding: 10px;
+  border-radius: 5px;
+  left: 10px;
+  top: 30px;
+  cursor: pointer;
+  @media (max-width: 453px) {
+    left: 0px;
+    padding: 5px;
+    top: 5px;
+  }
+}
+.showservices {
+  padding: 10px;
+  background-color: darkgoldenrod;
+  color: black;
+  font-weight: 800;
+  cursor: pointer;
+}
+.createService {
+  background-color: red;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  cursor: pointer;
+  color: white;
+}
+
+.createPartyA {
+  background-color: transparent;
+  font-size: 40px;
+  text-shadow: 5px 4px 10px rgba(0, 0, 0, 0.8);
+}
+
+.mesage {
+  color: red;
+  background-color: black;
+  font-weight: 800;
+  font-size: 15px;
+  margin-top: -10px;
+  height: 70px;
+  box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.8);
+  border: 3px solid white;
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  height: 150px;
+  background-color: #000;
+
+  @media (max-width: 555px) {
+    width: 320px;
+  }
+}
